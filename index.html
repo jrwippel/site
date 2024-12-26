@@ -1,42 +1,152 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Estilizado</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jackson Ricardo Wippel - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .skills-list, .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .skills-list li, .projects-list li {
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Site!</h1>
+        <h1>Jackson Ricardo Wippel</h1>
+        <p>Software Architect | Technical Leader | COBOL Expert</p>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Sou apaixonado por tecnologia e desenvolvimento web!</p>
-        </section>
-        <section id="servicos">
-            <h2>Meus Serviços</h2>
-            <ul>
-                <li>Desenvolvimento Web</li>
-                <li>Design Responsivo</li>
-                <li>SEO e Otimização</li>
-            </ul>
-        </section>
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Email: contato@meusite.com</p>
-        </section>
-    </main>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a seasoned software architect with over 18 years of experience in developing and leading technical teams in large-scale projects. My expertise lies in COBOL programming, technical leadership, and guiding transitions to modern tech stacks.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Over 18 years at a global beverage leader, transitioning to a leadership role at a major software firm. Proven experience in leading 26 developers across 5 squads for ERP solutions.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>COBOL Programming</li>
+            <li>Team Leadership</li>
+            <li>ERP Development</li>
+            <li>.NET and HTML</li>
+            <li>Microservices Architecture</li>
+            <li>Cloud-Native Solutions</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul class="projects-list">
+            <li>ERP Transition to Cloud-Native Architecture</li>
+            <li>Lead Developer for Global Beverage ERP Systems</li>
+            <li>Technical Strategist for 600+ Clients</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Jackson Ricardo Wippel. All rights reserved.</p>
     </footer>
 </body>
 </html>
